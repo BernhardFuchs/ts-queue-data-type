@@ -2,9 +2,10 @@
   "name": "@ts-adt/queue",
   "version": "1.0.0",
   "description": "Queue Abstract Data Type in Typescript",
-  "main": "lib/index.js",
-  "types": "lib",
+  "main": "lib/queue.js",
+  "types": "lib/queue.d.ts",
   "scripts": {
+    "prepublishOnly": "npm run build",
     "build": "rm -rf ./lib && tsc -p .",
     "test": "jest --passWithNoTests"
   },
@@ -15,15 +16,18 @@
     "ts",
     "typescript"
   ],
-  "author": "Bernhard Fuchs",
+  "author": "Bernhard Fuchs <developer.bernifox@gmail.com>",
   "license": "MIT",
-  "repository": "https://github.com/BernhardFuchs/ts-queue-data-type.git",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BernhardFuchs/ts-queue-data-type.git"
+  },
   "devDependencies": {
-    "@types/jest": "^24.0.15",
-    "husky": "^2.4.1",
-    "jest": "^24.8.0",
+    "@types/jest": "^24.0.18",
+    "husky": "^3.0.4",
+    "jest": "^24.9.0",
     "ts-jest": "^24.0.2",
-    "typescript": "^3.5.2"
+    "typescript": "^3.6.2"
   },
   "husky": {
     "hooks": {

@@ -1,16 +1,23 @@
 {
-  "name": "npm-module-seed",
+  "name": "@ts-adt/queue",
   "version": "1.0.0",
-  "description": "",
+  "description": "Queue Abstract Data Type in Typescript",
   "main": "lib/index.js",
   "types": "lib",
   "scripts": {
-    "build": "tsc -p .",
+    "build": "rm -rf ./lib && tsc -p .",
     "test": "jest --passWithNoTests"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "queue",
+    "adt",
+    "Abstract Data Type",
+    "ts",
+    "typescript"
+  ],
+  "author": "Bernhard Fuchs",
+  "license": "MIT",
+  "repository": "https://github.com/BernhardFuchs/ts-queue-data-type.git",
   "devDependencies": {
     "@types/jest": "^24.0.15",
     "husky": "^2.4.1",

@@ -1,5 +1,5 @@
 {
-  "name": "@ts-adt/queue",
+  "name": "devfox-ts-adt-queue",
   "version": "1.0.0",
   "description": "Queue Abstract Data Type in Typescript",
   "main": "lib/queue.js",
